@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>NC Innocence Project</title>
+<p> Source: <a href=http://www.innocenceproject.org/cases-false-imprisonment/front-page#c10=published&b_start=10&c5=NC></a></p>
+
+<!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<link rel='stylesheet' href='css/my-slider.css' />
+<link rel='stylesheet' href='css/custom-css.css' />
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+<style>
+body { background-color: #000000; color: #fff; padding: 0; margin: 0; }
+.container { width: 900px; margin: auto; padding-top: 1em; }
+.container .ism-slider { margin-left: auto; margin-right: auto; }
+</style>
+
+<link rel="stylesheet" href="css/my-slider.css"/>
+<script src="js/ism-2.1.js"></script>
+</head>
+<body>
+
+<div class='container'>
+  <section>
+    <div class="col-lg-12 col-md-12 col-sm-12">
+    <h1>Innocence Project in North Carolina</h1>
+
+
+  <p>The conditions of jails and detentions throughout the country are something of concern to many, throughout this investigative project, we took a look at what inmates have to say about their treatment and living conditions, worked with the Inside-Outside Coallition, and took a look at the work of the Innocence Project (a national organization that focuses on releasing wronglfully accused inmates). </p>
+
+  <h2>Where are we now?</h2>
+  <!-- CHARTS BEGIN------------------------------------------------------------------------------------------>
+  <script>
+  $(function () {
+      $('#container').highcharts({
+          chart: {
+              type: 'column'
+          },
+          title: {
+              text: 'N.C. Monthly Inmate Population'
+          },
+          subtitle: {
+              text: 'Source: http://randp.doc.state.nc.us/kimdocs/0003560.htm'
+          },
+          xAxis: {
+              categories: [
+                  'Jan',
+                  'Feb',
+                  'Mar',
+                  'Apr',
+                  'May',
+                  'Jun',
+                  'Jul',
+                  'Aug',
+                  'Sep',
+                  'Oct',
+                  'Nov',
+                  'Dec'
+              ],
+              crosshair: true
+          },
+          yAxis: {
+              min: 35000,
+              title: {
+                  text: 'end of month'
+              }
+          },
+          tooltip: {
+              headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+              pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                  '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+              footerFormat: '</table>',
+              shared: true,
+              useHTML: true
+          },
+          plotOptions: {
+              column: {
+                  pointPadding: 0.2,
+                  borderWidth: 0
+              }
+          },
+          series: [{
+              name: '2014',
+              data: [37014, 37321, 37456, 37639, 37662, 37699, 37806, 37873, 38050, 37605, 37356, 37601]
+
+          }, {
+              name: '2015',
+              data: [37377, 37085, 37604, 37377, 37808, 37786, 37913, 37974, 38049]
+
+          }]
+      });
+  });
+  </script>
+              <div class="row col-lg-12-col-md-12 col-sm-12">
+  <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+      </div>
+
+<p> How does this year compare to last year?
+<!--  <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+-->
+
+  </section>
+
+    <!-- INSTAGRAM INSTANSIVE WIDGET --><script src="//instansive.com/widget/js/instansive.js"></script><iframe src="//instansive.com/widgets/e72ca87e37bc40f801aae778b2ca9f2ac3d40e67.html" id="instansive_e72ca87e37" name="instansive_e72ca87e37"  scrolling="no" allowtransparency="true" class="instansive-widget" style="width: 500px; border: 0; overflow: hidden;"></iframe>
+  <!--slider-------------------------------------------->
+<div class="ism-slider" id="my-slider">
+  <ol>
+    <li>
+      <img src="image/slides/darryl_hunt.jpeg">
+      <div class="ism-caption ism-caption-0">Convicted in 1985, exonerated in 2004, cause: Eyewitness Misidentification, informants. </div>
+    </li>
+    <li>
+      <img src="image/slides/dwayne_allen_dail.jpeg">
+      <div class="ism-caption ism-caption-0">My slide caption text</div>
+    </li>
+    <li>
+      <img src="image/slides/edward_mcinnis.jpeg">
+      <div class="ism-caption ism-caption-0">My slide caption text</div>
+    </li>
+    <li>
+      <img src="image/slides/henry_lee_mccollum.jpeg">
+      <div class="ism-caption ism-caption-0">My slide caption text</div>
+    </li>
+    <li>
+      <img src="image/slides/joseph_abbitt.jpeg">
+      <div class="ism-caption ism-caption-0">My slide caption text</div>
+    </li>
+    <li>
+      <img src="image/slides/joseph_sledge.jpeg">
+      <div class="ism-caption ism-caption-0">My slide caption text</div>
+    </li>
+    <li>
+      <img src="image/slides/kenneth_kagonyera.jpeg">
+      <div class="ism-caption ism-caption-0">My slide caption text</div>
+    </li>
+    <li>
+      <img src="image/slides/leon_brown.jpeg">
+      <div class="ism-caption ism-caption-0">My slide caption text</div>
+    </li>
+    <li>
+      <img src="image/slides/lesly_jean.jpeg">
+      <div class="ism-caption ism-caption-0">My slide caption text</div>
+    </li>
+    <li>
+      <img src="image/slides/robert_wilcoxson.jpeg">
+      <div class="ism-caption ism-caption-0">My slide caption text</div>
+    </li>
+    <li>
+      <img src="image/slides/ronald_cotton.jpeg">
+      <div class="ism-caption ism-caption-0">My slide caption text</div>
+    </li>
+    <li>
+      <img src="image/slides/no_photo.jpg">
+      <div class="ism-caption ism-caption-0">NoPict</div>
+    </li>
+    <li>
+      <img src="image/slides/no_photo.jpg">
+      <div class="ism-caption ism-caption-0">NoPic</div>
+    </li>
+  </ol>
+</div>
+
+<p class="ism-badge" id="my-slider-ism-badge"><a class="ism-link" href="http://imageslidermaker.com">generated with ISM</a></p>
+<!-- Slider ends -------------------------------------------->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <!-- Include all compiled plugins (below), or include individual files as needed -->
+   <script src="js/bootstrap.min.js"></script>
+</div>
+</body>
+</html>
