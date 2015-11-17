@@ -1,0 +1,108 @@
+<!--<html lang="en">
+<head>
+
+  <script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="http://code.highcharts.com/modules/exporting.js"></script>
+
+<script src="js/highchart_graph.js"></script>
+
+
+</head>
+<body>
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+</body>-->
+<!DOCTYPE html>
+
+<head>
+
+        <html xmlns="http://www.w3.org/1999/xhtml">
+        <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+  <!-- jQuery -->
+<script type="text/javascript" charset="utf8" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <!-- high chart-->
+        <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    </head>
+
+<body>
+
+<!-- CHARTS BEGIN------------------------------------------------------------------------------------------>
+<script>
+$(function () {
+    $('#container').highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'N.C. Monthly Inmate Population'
+        },
+        subtitle: {
+            text: 'Source: http://randp.doc.state.nc.us/kimdocs/0003560.htm'
+        },
+        xAxis: {
+            categories: [
+                'Jan',
+                'Feb',
+                'Mar',
+                'Apr',
+                'May',
+                'Jun',
+                'Jul',
+                'Aug',
+                'Sep',
+                'Oct',
+                'Nov',
+                'Dec'
+            ],
+            crosshair: true
+        },
+        yAxis: {
+            min: 35000,
+            title: {
+                text: 'end of month'
+            }
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                '<td style="padding:0"><b>{point.y:.0f} </b></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0
+            }
+        },
+        series: [{
+            name: '2014',
+            data: [37014, 37321, 37456, 37639, 37662, 37699, 37806, 37873, 38050, 37605, 37356, 37601]
+
+        }, {
+            name: '2015',
+            data: [37377, 37085, 37604, 37377, 37808, 37786, 37913, 37974, 38049]
+
+        }]
+    });
+});
+</script>
+            <div class="row col-lg-12-col-md-12 col-sm-12">
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+    </div>
+           <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+</body>
+        </html>
